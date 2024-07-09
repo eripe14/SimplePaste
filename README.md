@@ -7,7 +7,7 @@
 </p>
 <h3>Where can I test it?</h3>
 <p>
-    It is simple. Visit https://paste.kdronia.pl/ and drop your code. Enjoy results!
+    It is simple. Visit <a href="https://paste.kdronia.pl/">this page</a> and drop your code. Enjoy results!
 </p>
 <br>
 <p align="center">
