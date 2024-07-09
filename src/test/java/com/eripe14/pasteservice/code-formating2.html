@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Language Detection for Code Formatting</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+    <style>
+        body {
+            background-color: #2d2d2d;
+            color: #ccc;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: 20px;
+        }
+
+        .box {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        textarea.form-control {
+            width: 100%;
+            padding: 10px 20px 10px 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: 'Courier New', Courier, monospace;
+            box-sizing: border-box;
+        }
+
+        textarea.form-control::placeholder {
+            color: #bbb;
+            font-size: 18px;
+        }
+
+        .btn {
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+        <h2>Enter your code:</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <textarea id="codeInput" class="form-control" rows="20" placeholder="Enter your code here..."
+                          name="content"></textarea>
+                <button class="btn" type="submit">Confirm</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

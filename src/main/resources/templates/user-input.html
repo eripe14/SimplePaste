@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style/user-input.css">
+        <title>Simple paste service</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/simplepaste.png">
+    </head>
+    <body>
+        <div class="header">
+            <img src="/simplepaste.png" alt="SimplePaste Icon">
+            <h1>SimplePaste - A Simple Paste Service</h1>
+        </div>
+        <div class="container">
+            <div class="box">
+                <h2>Enter your code:</h2>
+                <form action="/submit" method="post">
+                    <div class="form-group">
+                        <textarea id="codeInput" class="form-control" rows="25" placeholder="Enter your code here..."
+                                  name="content" required></textarea>
+                        <button class="btn" type="submit">Confirm</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
