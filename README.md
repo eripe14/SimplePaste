@@ -11,5 +11,5 @@
 </p>
 <br>
 <p align="center">
-    <img src="/src/main/resources/static/baner.png" align="center">
+    <img src="/src/main/resources/static/baner.png" align="center" height="70%">
 </p>
