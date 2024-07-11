@@ -27,6 +27,11 @@ public class UserInputController {
         return "user-input";
     }
 
+    @GetMapping("/response")
+    public String emptyResponse() {
+        return "not-found";
+    }
+
     @PostMapping(value = "/submit")
     public String getUserResponse(Model model, String content) {
         UUID uuid = UUID.randomUUID();
@@ -43,6 +48,11 @@ public class UserInputController {
     @GetMapping(value = "/response/{uniqueId}")
     public String showResponse(Model model, @PathVariable String uniqueId) {
         Paste paste = this.pasteService.findByUuid(uniqueId);
+
+        if (paste == null) {
+            return "not-found";
+        }
+
         String content = paste.getContent();
 
         model.addAttribute("content", content);
