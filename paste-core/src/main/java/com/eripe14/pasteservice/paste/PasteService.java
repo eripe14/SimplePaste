@@ -1,7 +1,5 @@
-package com.eripe14.pasteservice.service;
+package com.eripe14.pasteservice.paste;
 
-import com.eripe14.pasteservice.paste.Paste;
-import com.eripe14.pasteservice.paste.PasteRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

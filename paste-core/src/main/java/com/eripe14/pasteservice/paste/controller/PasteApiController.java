@@ -1,7 +1,7 @@
-package com.eripe14.pasteservice.controller;
+package com.eripe14.pasteservice.paste.controller;
 
 import com.eripe14.pasteservice.paste.Paste;
-import com.eripe14.pasteservice.service.PasteService;
+import com.eripe14.pasteservice.paste.PasteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

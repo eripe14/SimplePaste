@@ -1,4 +1,5 @@
 import Header from "../components/header/Header";
+import PasteForm from "../components/PasteForm";
 import logo from "../assets/logo.png";
 
 export default function MainPage() {
@@ -12,6 +13,7 @@ export default function MainPage() {
             </head>
             <body>
                 <Header />
+                <PasteForm />
             </body>
         </html>
     );

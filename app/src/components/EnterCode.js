@@ -1,12 +1,9 @@
 import React from "react";
+import Button from "./button/Button";
 
 function EnterCode() {
     return (
         <div className="container">
-            <div className="header">
-                <img src="/app/src/assets/logo.png" alt="SimplePaste Icon" />
-                    <h1>SimplePaste - A Simple Paste Service</h1>
-            </div>
             <div className="box">
                 <h2>Enter your code:</h2>
                 <form action="/submit" method="post">
@@ -19,6 +16,7 @@ function EnterCode() {
                                   required
                         >
                         </textarea>
+                        <Button content={"Confirm"} destination={"/submit"}/>
                         <button className="btn" type="submit">Confirm</button>
                     </div>
                 </form>
