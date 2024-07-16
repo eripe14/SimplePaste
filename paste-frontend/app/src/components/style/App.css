@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #202327;
+}
+
+.wrapper {
+    background: #202327;
+    min-height: 100vh;
+}
+
+.paste-form-box {
+    background: #181a1d;
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 15px 20px;
+}
+
+.paste-form-dots {
+    display: flex;
+    gap: 8px;
+}
+
+.paste-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: filter 1.5s ease-in-out;
+    cursor: pointer;
+}
+
+.paste-dot:hover {
+    filter: brightness(15%);
+}
+
+.paste-dot.red {
+    background: #ff5f56;
+}
+
+.paste-dot.yellow {
+    background: #ffbd2e;
+}
+
+.paste-dot.green {
+    background: #27c93f;
+}
+
+.paste-form-group {
+    padding: 20px 5px 10px;
+}
+
+.paste-form-control {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    display: flex;
+}
+
+textarea.paste-form-control {
+    background: #eee;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    resize: none;
+}
+
+textarea.paste-form-control::placeholder {
+    color: #aaa;
+    font-size: 20px;
+}
+
+.paste-form-control-button {
+    background: #4a9eff;
+    color: #eee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    display: block;
+    margin: 20px auto 0;
+}
