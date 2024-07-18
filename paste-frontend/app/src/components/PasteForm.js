@@ -29,7 +29,7 @@ function PasteForm() {
 
             const data = await response.json();
             const uniqueId = data.uniqueId;
-            // Przekierowanie do strony odpowiedzi
+
             window.location.href = `/response/${uniqueId}`;
         } catch (error) {
             console.error('Błąd podczas wysyłania danych:', error);
@@ -48,7 +48,7 @@ function PasteForm() {
                     <textarea
                         className="paste-form-control"
                         value={content}
-                        rows={15}
+                        rows={20}
                         placeholder="Enter your content here..."
                         required={true}
                         onChange={(event) => setContent(event.target.value)}

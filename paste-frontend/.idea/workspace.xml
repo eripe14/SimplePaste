@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2762ada9-c85b-4571-9f08-d7dfc19ed87f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/paste-frontend.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paste-backend/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paste-backend/.idea/material_theme_project_new.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paste-backend/.idea/saveactions_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../paste-backend/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/assets/day-mode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/assets/menu-dark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/assets/menu-light.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/assets/night-mode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/header/ThemeSwitcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/header/menu/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/components/header/menu/MenuItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/hooks/UseTheme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/PasteForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/PasteForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/components/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/components/style/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/layout/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/layout/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/app/package.json" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -29,13 +54,29 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/codes/pasteservice/paste-frontend",
+    "git-widget-placeholder": "create-main-page-layout",
+    "last_opened_file_path": "F:/codes/pasteservice/paste-frontend/app/public",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\karol\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\codes\pasteservice\paste-frontend\app\public" />
+      <recent name="F:\codes\pasteservice\paste-frontend\app\src\assets" />
+      <recent name="F:\codes\pasteservice\paste-frontend\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\codes\pasteservice\paste-frontend\app\src\assets" />
+      <recent name="F:\codes\pasteservice\paste-frontend" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,6 +95,13 @@
       <workItem from="1721159495173" duration="75000" />
       <workItem from="1721159575227" duration="118000" />
       <workItem from="1721159698005" duration="148000" />
+      <workItem from="1721159851911" duration="562000" />
+      <workItem from="1721160428528" duration="967000" />
+      <workItem from="1721170511539" duration="9692000" />
+      <workItem from="1721217674732" duration="1200000" />
+      <workItem from="1721225095688" duration="911000" />
+      <workItem from="1721232254030" duration="616000" />
+      <workItem from="1721296694457" duration="15934000" />
     </task>
     <servers />
   </component>

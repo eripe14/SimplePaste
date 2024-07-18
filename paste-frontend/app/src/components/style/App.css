@@ -1,27 +1,163 @@
+.main-page {
+    background: var(--background);
+    color: var(--color);
+    transition: all 1s ease;
+    height: 100%;
+    font-family: "Verdana", sans-serif;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #202327;
 }
 
 .wrapper {
-    background: #202327;
     min-height: 100vh;
+    width: 80%;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.button {
+    background: #4a9eff;
+    color: #eee;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 18px;
+    transition: 0.7s;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.26), 10px 10px 10px var(--shadow-color);
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-title {
+    position: relative;
+    width: max-content;
+    transition: font-size 0.3s ease;
+}
+
+.header-title .short-title {
+    display: none;
+}
+
+.header-title::after {
+    content: "";
+    background: linear-gradient(to right, var(--background), #4a9eff 50%, var(--background));
+    height: 3px;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    transition: width 0.55s ease-in-out;
+}
+
+.header-title:hover::after {
+    width: 100%;
+}
+
+.header {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-title {
+    font-size: 34px;
+    transition: font-size 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        justify-content: space-between;
+    }
+
+    .header-title {
+        max-width: fit-content; /* Adjust based on the width of your menu icon */
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 20px;
+    }
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-image {
+    cursor: pointer;
+}
+
+.menu-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--background);
+    min-width: 160px;
+    box-shadow: 0 18px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+.menu-list.open {
+    max-height: 300px;
+    opacity: 1;
+    transition: background 1s ease;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.menu-item:hover {
+    opacity: 0.7;
 }
 
 .paste-form-box {
     background: #181a1d;
-    width: 85%;
+    width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 25px auto 0;
     border-radius: 15px;
-    padding: 15px 20px;
+    animation: appear 2s both;
 }
 
 .paste-form-dots {
     display: flex;
     gap: 8px;
+    width: fit-content;
+    transform: translate(10px, 10px);
 }
 
 .paste-dot {
@@ -49,7 +185,7 @@ body, html {
 }
 
 .paste-form-group {
-    padding: 20px 5px 10px;
+    padding: 30px 2% 20px;
 }
 
 .paste-form-control {
@@ -75,6 +211,7 @@ textarea.paste-form-control {
 textarea.paste-form-control::placeholder {
     color: #aaa;
     font-size: 20px;
+    font-family: "Verdana", sans-serif;
 }
 
 .paste-form-control-button {
@@ -88,4 +225,5 @@ textarea.paste-form-control::placeholder {
     font-size: 18px;
     display: block;
     margin: 20px auto 0;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.26), 10px 10px 10px #141619;
 }
